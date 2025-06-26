@@ -24,23 +24,23 @@ const Sidebars = () => {
           {/* <MenuItem component={<Link to="/bannerprojects" />}><BsFillBuildingsFill /> Banners Projects</MenuItem> */}
           {/* <MenuItem component={<Link to="/homebanner" />}><GrGallery /> Home Page Banner</MenuItem> */}
           {/* <MenuItem component={<Link to="/aboutus" />}><VscGraph /> About Us</MenuItem> */}
-          <MenuItem component={<Link to="/partners" />}><HiUsers /> Partners</MenuItem>
+          {/* <MenuItem component={<Link to="/partners" />}><HiUsers /> Partners</MenuItem> */}
           
           {/* <MenuItem component={<Link to="/ourOffices" />}><PiBuildingOfficeFill /> Our Offices</MenuItem> */}
           {/* <MenuItem component={<Link to="/blog" />}><GoCodeReview /> What They Say About Us</MenuItem> */}
           {/* <MenuItem component={<Link to="/blog" />}><RiBloggerFill /> Blogs</MenuItem> */}
-          <MenuItem component={<Link to="/team" />}><RiBloggerFill /> Add Team</MenuItem>
-          <MenuItem component={<Link to="/products" />}><CgNotes />Add Products</MenuItem>
+          {/* <MenuItem component={<Link to="/team" />}><RiBloggerFill /> Add Team</MenuItem>
+          <MenuItem component={<Link to="/products" />}><CgNotes />Add Products</MenuItem> */}
           {/* <MenuItem component={<Link to="/partnerWithUs" />}><ImUsers /> Partner with Us</MenuItem> */}
           {/* <MenuItem component={<Link to="/buddyServ" />}><FaUserFriends /> Buddy Services</MenuItem> */}
           {/* <MenuItem component={<Link to="/responses" />}><CgNotes />Career Responses</MenuItem> */}
           <MenuItem component={<Link to="/contactRes" />}><CgNotes />Contact Responses</MenuItem>
           <MenuItem component={<Link to="/responses" />}><CgNotes />Get In Touch Responses</MenuItem>
-          <MenuItem component={<Link to="/careerRes" />}><CgNotes />Career Responses</MenuItem>
+          {/* <MenuItem component={<Link to="/careerRes" />}><CgNotes />Career Responses</MenuItem> */}
           {/* <MenuItem component={<Link to="/testimonials" />}><CgNotes />Testimonials</MenuItem> */}
          
           {/* <MenuItem component={<Link to="/masters" />}><FaGlobe /> Masters</MenuItem> */}
-          <MenuItem component={<Link to="/postJob" />}><VscGraph /> Post A Job</MenuItem>
+          {/* <MenuItem component={<Link to="/postJob" />}><VscGraph /> Post A Job</MenuItem> */}
           {/* <MenuItem component={<Link to="/franchise" />}><FaGlobe /> Franchise</MenuItem> */}
           <MenuItem component={<Link to="/" />}> Logout</MenuItem>
 
