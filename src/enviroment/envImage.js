@@ -1,6 +1,6 @@
 //localhost url//
 
-export const envImgUrl = "http://localhost/Propy/admin";
+// export const envImgUrl = "http://localhost/Propy/admin";
 
 
 // workspace url//

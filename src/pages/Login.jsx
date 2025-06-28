@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Loader from "../components/Loader";
-import { authClient } from "../utils/httpClient";
+import { apiClient } from "../utils/httpClient";
 import { useNavigate } from "react-router-dom";
 import { UserInfoContext } from "../utils/context";
 const Login = () => {
@@ -16,9 +16,9 @@ const Login = () => {
     const validateForm = () => {
         let errors = {};
         let formIsValid = true;
-        if (!loginForm.username) {
+        if (!loginForm.name) {
             formIsValid = false;
-            errors.username = "Please enter your username.";
+            errors.name = "Please enter your name.";
         }
 
         if (!loginForm.password) {
@@ -31,18 +31,23 @@ const Login = () => {
 
     const handleSubmit = async () => {
         setLoader(true);
-        if (validateForm()) {
-            const response = await authClient.post('/userlogin', loginForm);
+        try {
+            const response = await apiClient.post('/login', loginForm);
+            console.log(response)
             if (response.data.status) {
-                setUser(response.data.data?.data);
-                localStorage.setItem('adminToken', response.data.data.token);
-                navigation('/expoDashboard');
+                setUser(response.data.user);
+                localStorage.setItem('adminToken', response.data.token);
+                navigation('/dashboard');
                 setLoader(false);
             }
+        } catch (error) {
+            console.log('Error', error);
+
+        } finally {
+            setLoader(false);
         }
-        else {
-            console.log('form is invalid');
-        }
+
+
     }
 
     return (
@@ -78,17 +83,17 @@ const Login = () => {
                                                 <input
                                                     type="text"
                                                     className="form-control"
-                                                    placeholder="Enter username"
-                                                    aria-label="Username"
+                                                    placeholder="Enter name"
+                                                    aria-label="name"
                                                     aria-describedby="basic-addon1"
-                                                    name="username"
+                                                    name="name"
                                                     onChange={handleChange}
                                                 />
 
                                             </div>
                                             <div>
-                                                {formErr.username && <p className="err">{formErr.username}</p>}
-                                                {formErr.notValidUsername && !formErr.username && <p className="err">{formErr.notValidUsername}</p>}
+                                                {formErr.name && <p className="err">{formErr.name}</p>}
+                                                {formErr.notValidname && !formErr.name && <p className="err">{formErr.notValidname}</p>}
                                             </div>
 
                                             <div className="input-group auth-form-group-custom mb-3">
@@ -103,7 +108,7 @@ const Login = () => {
                                                     className="form-control"
                                                     id="userpassword"
                                                     placeholder="Enter password"
-                                                    aria-label="Username"
+                                                    aria-label="name"
                                                     aria-describedby="basic-addon1"
                                                     name="password"
                                                     onChange={handleChange}

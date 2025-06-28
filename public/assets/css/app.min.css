@@ -52,12 +52,12 @@ body {
   text-align: center;
   border-bottom: 2px solid #221c5d00;
   box-shadow: 1px 1px 1px -1px #000000;
-  background-image: linear-gradient(110deg, #ffffff 1%, #0d0d0d 100%);
+  /* background-image: linear-gradient(110deg, #ffffff 1%, #0d0d0d 100%); */
   padding: 7px 10px;
   z-index: -1;
   position: relative;
   justify-content: space-between;
-  
+
 }
 
 .navbar-header .dropdown .show.header-item {
@@ -38321,7 +38321,8 @@ span#basic-addon1 {
   position: sticky;
   top: 0;
 }
-.ps-sidebar-container.css-dip3t8{
+
+.ps-sidebar-container.css-dip3t8 {
   position: fixed !important;
 }
 
@@ -39477,4 +39478,44 @@ ul {
 
 .form-floating.decp span {
   top: 130px;
+}
+
+.input-group .btn {
+  color: #a6aec1;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.input-group-btn {
+  position: absolute;
+  right: -15px;
+  top: 2px;
+  color: #d1d3d8;
+}
+
+.user-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #b1b1b5;
+}
+
+.badge.badge-danger {
+  position: absolute;
+  left: 20px;
+  /* right: 0; */
+  /* top: 0; */
+  bottom: 17px;
+  width: 18px;
+  height: 17px;
+  border-radius: 50px;
+  font-size: 10px;
+}
+
+.fa.fa-bell {
+  color: #c2c2c2;
+}
+
+.dropdown-toggle::after {
+  color: #c2c2c2;
 }

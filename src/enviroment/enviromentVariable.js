@@ -1,6 +1,6 @@
 // localhost url
 
-export const enviromentUrl = "http://localhost/Propy/admin/Api"
+// export const enviromentUrl = "http://localhost/Propy/admin/Api"
 // 
 // mmworkspaceUrl
 
