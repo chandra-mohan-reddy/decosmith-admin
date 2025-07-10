@@ -77,7 +77,7 @@ const ContactResponse = () => {
                     <li className="breadcrumb-item">
                       <Link to="/">Home</Link>
                     </li>
-                    <li className="breadcrumb-item active">Contact Responses</li>
+                    <li className="breadcrumb-item active"> Responses</li>
                   </ol>
                 </div>
               </div>
