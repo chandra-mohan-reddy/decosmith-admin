@@ -35,7 +35,7 @@ const Sidebars = () => {
           {/* <MenuItem component={<Link to="/buddyServ" />}><FaUserFriends /> Buddy Services</MenuItem> */}
           {/* <MenuItem component={<Link to="/responses" />}><CgNotes />Career Responses</MenuItem> */}
           <MenuItem component={<Link to="/contactRes" />}><CgNotes />Contact Responses</MenuItem>
-          <MenuItem component={<Link to="/contactRes" />}><CgNotes />Refer A Friend Responses</MenuItem>
+          <MenuItem component={<Link to="/referFriendRes" />}><CgNotes />Refer A Friend Responses</MenuItem>
           <MenuItem component={<Link to="/contactRes" />}><CgNotes />Partner With Us Responses</MenuItem>
           <MenuItem component={<Link to="/contactRes" />}><CgNotes />Get In Touch Responses</MenuItem>
           {/* <MenuItem component={<Link to="/careerRes" />}><CgNotes />Career Responses</MenuItem> */}

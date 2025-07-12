@@ -26,6 +26,7 @@ const LazyLoad = () => {
   const ContactRes = lazy(() => import(`../pages/CantactResponce`));
   const Products = lazy(() => import(`../pages/Products`));
   const CareerResponce = lazy(() => import(`../pages/careerResponce`));
+  const ReferFrinedRes = lazy(() => import(`../pages/ReferFriendRes`));
   
 
   return (
@@ -52,6 +53,7 @@ const LazyLoad = () => {
         <Route path="/contactRes" element={<ContactRes/>}/>
         <Route path="/products" element={<Products/>}/>
         <Route path="/careerRes" element={<CareerResponce/>}/>
+        <Route path="/referFriendRes" element={<ReferFrinedRes/>}/>
       </Routes>
     </Suspense>
   );
